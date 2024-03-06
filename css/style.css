@@ -471,6 +471,14 @@ nav a {
     flex-direction: column;
     font-size: 14px;
   }
+  .imgback {
+    background-image: url("./mujeee");
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    grid-area: imgback;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
