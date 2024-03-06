@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "bienve bienve img1 img1"
+      "Nosotros Nosotros Nosotros Nosotros"
+      "imgback imgback imgback imgback"
+      "segui segui segui segui"
+      "footer footer footer footer";
+  }
+.bienve, .img1 { 
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 230, 211);
+    width: 100%;
+    height: 100vh;
+    grid-area: bienve;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    
+}
+.bienvee {
+    display: inline-block;
+    margin: 0;
+    padding-left: 7%;
+    color: rgb(51, 110, 51);
+}
+h2 {
+    display: inline-block;
+    margin:0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: rgb(63, 119, 63);
+}
+.img11 {
+    width: 100%;
+    height: 100%;
+}
+.Nosotros {
+  position: relative;
+  color: black;
+}
+
+.Nosotros:before {
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/imgs/mano-fruta-sana-dibujada-textura-fluida_1284-52004.avif');
+  background-size: 50%;
+  opacity: 0.1;
+}
+.Nosotros {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  grid-area: Nosotros;
+}
+
+.Noso, .Nosot > * {
+  position: relative;
+  z-index: 1; 
+}
+.Nosot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-left: 35%;
+}
+.Noso {
+  font-size: 20px;
+  color: rgb(82, 80, 80);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 9%;
+  padding-bottom: 6%;
+  height: 100%;
+  margin-top: 0;
+}
+.contno {
+  height: auto;
+  width: 100%;
+  border-radius: 10%;
+  font-size: 18px;
+  color: rgb(66, 65, 65);
+}
+.fot2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 280px;
+  position: absolute;
+  margin-top: 7%;
+}
+.let {
+  margin-top: 5%;
+  color: #1b681d;
+}
+.let1 {
+  color: #29752b;
+  font-size: 21px;
+}
+img {
+  border-radius: 10px;
+}
+
+.img1 { grid-area: img1; }
+  
+.imgback { 
+  background-image: url('/imgs/mujeee');
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  grid-area: imgback; 
+}
+  
+.segui { 
+  grid-area: segui;
+  position: relative;
+}
+
+.segui:before {
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/imgs/mano-fruta-sana-dibujada-textura-fluida_1284-52004.avif');
+  background-size: 50%;
+  opacity: 0.1;
+}
+
+
+
+
+
+
+
+
+.footer { 
+  background-color: #1b681d;
+  grid-area: footer;
+  color: white; 
+  font-size: 14px;  
+  text-align: center; 
+  margin: 0;
+}
+footer {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.desktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    height: 18vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(39, 87, 34);
+    z-index: 5;
+    font-size: 20px;
+  }
+nav .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+#logoo{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+  }
+
+nav a {
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+  }
+  #nav34 {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    width: 100%;
+  }
+  .primary, .secondary-full {
+    display: inline-flex;
+  }
+  .whatsapp-button {
+    background-color: #73ac33; 
+    color: #fff;
+    border: 2px solid #1b681d; 
+    padding: 10px 20px;
+    font-size: 17px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    outline: none;
+}
+.botone {
+    display: flex;
+    align-self: flex-start;
+    padding-top: 15%;
+    padding-left: 16%;
+}
+
+.whatsapp-button:hover {
+    background-color: #4CAF50;
+}
+
+
+
+.instagram-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.instagram-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-item {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.instagram-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 670px) {
+    .img11 {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .bienve, .img1 {
+        height: 80vh;
+        font-size: 17px;
+    }
+    .desktop, #logoo, #nav34 {
+        max-width: 100vh;
+        max-height: 20vh;
+        display: flex;
+        font-size: 16px;     
+    }
+    #logoo {
+        padding-left: 10px;
+    }
+    .secondary-full a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sua {
+        display: none;
+    }
+  }
